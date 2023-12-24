@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 // LECTURE: Functions
 function describeCountry(country, population, capitalCity) {
     const countryName = country;
@@ -100,3 +101,43 @@ const myCountry = {
 };
 
 console.log(myCountry);
+*/
+
+// LECTURE: Dot vs Bracket Notation
+
+const Michael = {
+    firstName: "Michael",
+    lastName: "Dodson",
+    age: 2023 - 1968,
+    career: "web developer",
+    friends: ["Arthur", "Vincent", "Jay"]
+};
+
+console.log(Michael);
+
+// dot notation
+console.log(Michael.career);
+
+// bracket notation
+console.log(Michael['career']);
+
+const nameKey = 'Name';
+console.log(Michael['first' + nameKey]);
+console.log(Michael['last' + nameKey]);
+
+const interest = prompt('What do you want to know about Michael? Choose between firstNme, lastName, age, career, and friends.');
+
+if(Michael[interest]) {
+    console.log(Michael[interest]);
+} else {
+    console.log('Wrong request! Choose between firstNme, lastName, age, career, and friends.');
+};
+
+// Using dot and bracket notation to add a value to a property
+Michael.location = "St. Louis, Missouri";
+console.log(Michael.location);
+
+Michael['favTeam'] = "Golden State Warriors";
+console.log(Michael['favTeam']);
+
+console.log(`${Michael.firstName} has ${Michael.friends.length} friends. ${Michael.friends[2]} is his best friend.`);
