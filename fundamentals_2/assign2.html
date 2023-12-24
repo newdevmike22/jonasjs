@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Assignments</title>
+    <style>
+        body {
+            height: 100vh;
+            align-items: center;
+            padding: 60px;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 50px;
+            line-height: 1.3;
+            width: 100%;
+            text-align: center;
+            color: black;
+        }
+        h2 {
+            font-family: sans-serif;
+            font-size: 25px; 
+            text-align: left;   
+        }
+        div {
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>
+            LECTURE: Functions
+            <ol>
+                <li>
+                    Write a function called 'describeCountry' which takes three parameters:
+                    'country', 'population' and 'capitalCity'. Based on this input, the
+                    function returns a string with this format: 'Finland has 6 million people and its
+                    capital city is Helsinki'.
+                </li>
+                <li>
+                    Call this function 3 times, with input data for 3 different countries. Store the
+                    returned values in 3 different variables, and log them to the console.
+                </li>
+            </ol>
+        </h2>
+        <h2>
+            LECTURE: Function Declarations vs. Expressions
+            <ol>
+                <li>
+                    The world population is 7900 million people. Create a <strong>function declaration</strong>
+                    called 'percentageOfWorld1' which receives a 'population' value, and
+                    returns the percentage of the world population that the given population
+                    represents. For example, China has 1441 million people, so it's about 18.2% of
+                    the world population.
+                </li>
+                <li>
+                    To calculate the percentage, divide the given 'population' value by 7900
+                    and then multiply by 100.
+                </li>
+                <li>
+                    Call 'percentageOfWorld1' for 3 populations of countries of your choice,
+                    store the results into variables, and log them to the console.
+                </li>
+                <li>
+                    Create a <strong>function expression</strong> which does the exact same thing, called
+                    'percentageOfWorld2', and also call it with 3 country populations (can be
+                    the same populations).
+                </li>
+            </ol>
+        </h2>
+        <h2>
+            LECTURE: Arrow Functions
+            <ol>
+                <li>
+                    Recreate the last assignment, but this time create an arrow function called
+                    'percentageOfWorld3'.
+                </li>
+            </ol>
+        </h2>
+        <h2>
+            LECTURE: Functions Calling Other Functions
+            <ol>
+                <li>
+                    Create a function called 'describePopulation'. Use the function type you
+                    like the most. This function takes in two arguments: 'country' and
+                    'population', and returns a string like this: 'China has 1441 million people,
+                    which is about 18.2% of the world.'
+                </li>
+                <li>
+                    To calculate the percentage, 'describePopulation' call the
+                    'percentageOfWorld1' you created earlier.
+                </li>
+                <li>
+                    Call 'describePopulation' with data for 3 countries of your choice.
+                </li>
+            </ol>
+        </h2>
+        <h2>
+            LECTURE: Introduction to Arrays
+            <ol>
+                <li>
+                    Create an array containing 4 population values of 4 countries of your choice.
+                    You may use the values you have been using previously. Store this array into a
+                    variable called 'populations'
+                </li>
+                <li>
+                    Log to the console whether the array has 4 elements or not (true or false).
+                </li>
+                <li>
+                    Create an array called 'percentages' containing the percentages of the
+                    world population for these 4 population values. Use the function
+                    'percentageOfWorld1' that you created earlier to compute the 4
+                    percentage values.
+                </li>
+            </ol>
+        </h2>
+        <h2>
+            LECTURE: Basic Array Operations (Methods)
+            <ol>
+                <li>
+                    Create an array containing all the neighbouring countries of a country of your
+                    choice. Choose a country which has at least 2 or 3 neighbours. Store the array
+                    into a variable called 'neighbours'.
+                </li>
+                <li>
+                    At some point, a new country called 'Utopia' is created in the neighbourhood of
+                    your selected country. So add it to the end of the 'neighbours' array.
+                </li>
+                <li>
+                    Unfortunately, after some time, the new country is dissolved. So remove it from
+                    the end of the array.
+                </li>
+                <li>
+                    If the 'neighbours' array does not include the country ‘Germany’, log to the
+                    console: 'Probably not a central European country :D.
+                </li>
+                <li>
+                    Change the name of one of your neighbouring countries. To do that, find the
+                    index of the country in the 'neighbours' array, and then use that index to
+                    change the array at that index position. For example, you can search for
+                    'Sweden' in the array, and then replace it with 'Republic of Sweden'.
+                </li>
+            </ol>
+        </h2>
+        <h2>
+            LECTURE: Introduction to Objects
+            <ol>
+                <li>
+                    Create an object called 'myCountry' for a country of your choice, containing
+                    properties 'country', 'capital', 'language', 'population' and
+                    'neighbours' (an array like we used in previous assignments).
+                </li>
+            </ol>
+        </h2>
+    </div>
+    <script src="./assign2.js"></script>
+</body>
+</html>
